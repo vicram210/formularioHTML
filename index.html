@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+        <h1>Formulario de inscripción 2023-24</h1>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" size="30" required>
+            </p>
+            <p>
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="nacimiento" id="nacimiento" max="2017-12-31">
+            </p>
+            <p>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" maxlength="9" size="10" required>
+            </p>
+            <p>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" size="12">
+            </p>
+            <p>
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" name="provincia" value="Comunidad de Madrid" readonly>
+            </p>
+            <p>
+                <label for="fotografia">Selecciona una fotografia para tu perfil:</label>
+                <br><br>
+                <input type="file" name="fotografia" id="fotografia">
+            </p>
+            <p>
+                <label for="archivos_obligatorios">Adjunta archivos obligatorios:</label>
+                <input type="file" name="archivos_obligatorios" id="archivos_obligatorios" multiple required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Curso de Inscripción</legend>
+
+            <p>
+                <label for="curso">Curso:</label>
+                <input type="radio" name="curso" id="primero">Primero
+                <input type="radio" name="curso" id="segundo">Segundo
+            </p>
+            <p>
+                <label for="ciclo_formativo">Ciclo Formativo:</label>
+                <select name="ciclo_formativo">
+
+                    <optgroup label="Grado Superior">
+                        <option value="administracion_fianzas">Administración y Finanzas</option>
+                        <option value="asir">Administración de Sistemas Informáticos en Red</option>
+                        <option value="dam">Desarrollo de Aplicaciones Multiplataforma</option>
+                        <option value="daw">Desarrollo de Aplicaciones Web</option>
+                    </optgroup>
+                    <optgroup label="Grado Medio">
+                        <option value="gention_administrativa" disabled>Gestión Administrativa</option>
+                        <option value="smr">Sistemas Microinformáticos y Redes</option>
+                    </optgroup>
+                    <optgroup label="Grado Básico">
+                        <option value="informatica_oficina">Informática de oficina</option>
+                        <option value="informatica_comunicaciones">Informática y comunicaciones</option>
+                        <option value="servicios_administrativos" disabled>Servicios administrativos</option>
+                    
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Acceso al Campus</legend>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="correo@empresa.com">
+            </p>
+            <p>
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Observaciones</legend>
+            <p>
+                <textarea name="textarea" id="" cols="60" rows="5"></textarea>
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Protección de datos</legend>
+            <p>
+                <input type="checkbox" name="aceptar_condiciones" id="aceptar_condiciones" required>
+                Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos.
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" name="inscribirse" value="Inscribirme">
+            <input type="submit" name="resetear" value="Resetear datos">
+        </p>
+
+    </form>
+</body>
+</html>
