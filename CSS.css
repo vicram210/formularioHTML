@@ -1,0 +1,24 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+legend{
+    font-style: oblique;
+}
+
+fieldset{
+    border: 3px white solid;
+    margin: 50px;
+}
+
+.botones{
+    color: black;
+}
+
+#moverIzquierda{
+    margin-left: 45%;
+}
